@@ -27,12 +27,12 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
 
-  <div class="img-decoracion">
-    <div class="contenedor-decoracion">
-      <img src="img/mano-collage.png" alt="decoracion mano sosteniendo el tablero de filtros" class="recorte-mano-collage">
-      <img src="img/dado-recorte.png" alt="decoracion dado sobre tablero de forma decorativa" class="recorte-dado-collage">
-    </div>
-  </div>
+  <!-- <div class="img-decoracion"> -->
+  <!--   <div class="contenedor-decoracion"> -->
+  <!--     <img src="img/mano-collage.png" alt="decoracion mano sosteniendo el tablero de filtros" class="recorte-mano-collage"> -->
+  <!--     <img src="img/dado-recorte.png" alt="decoracion dado sobre tablero de forma decorativa" class="recorte-dado-collage"> -->
+  <!--   </div> -->
+  <!-- </div> -->
 
 
   <div class="container container-filtros">
@@ -526,9 +526,9 @@ donde rojo es para alto, amarillo moderado y verde bajo.
                 <div class="contenido">
                     <div class="contenido-gris">
                         <p class="boletin">Boletín: <a href="">Nº 16.888-06</a></p>
-                        <button type="button" class="btn btn-secondary tooltips-dato" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Ha sido refundida bajo estos boletín: Nº16.593-06 - Nº16.988-06">
-                            Refundida
-                        </button>
+                        <!-- <button type="button" class="btn btn-secondary tooltips-dato" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Ha sido refundida bajo estos boletín: Nº16.593-06 - Nº16.988-06"> -->
+                        <!--     Refundida -->
+                        <!-- </button> -->
                     </div>
                     <div class="contenido-blanco">
                         <ul>
@@ -605,9 +605,9 @@ donde rojo es para alto, amarillo moderado y verde bajo.
                 <div class="contenido">
                     <div class="contenido-gris">
                         <p class="boletin">Boletín: <a href="">Nº 16.886-12</a></p>
-                        <button type="button" class="btn btn-secondary tooltips-dato" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Fue desechada como proyecto de ley">
-                            Descartada
-                        </button>
+                        <!-- <button type="button" class="btn btn-secondary tooltips-dato" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Fue desechada como proyecto de ley"> -->
+                        <!--     Descartada -->
+                        <!-- </button> -->
                     </div>
                     <div class="contenido-blanco">
                         <ul>
@@ -695,32 +695,4 @@ donde rojo es para alto, amarillo moderado y verde bajo.
 
   </div>
 
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var grid = document.querySelector('.grid');
-            var msnry = new Masonry(grid, {
-                itemSelector: '.proyecto-resumen',
-                columnWidth: '.proyecto-resumen',
-                percentPosition: true,
-                gutter: 20
-            });
-
-            window.addEventListener('resize', function() {
-                msnry.layout();
-            });
-
-
-        });
-    </script>
-
-
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
-    
-    <script>
-    document.querySelector('body').style.overflow = 'auto';
-    </script>
 </Layout>
